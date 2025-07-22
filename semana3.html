@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 3 - HTML y CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 3</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">HTML Básico y Avanzado, CSS Básico y Avanzado</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Fundamentos y técnicas avanzadas de HTML para estructura semántica y CSS para diseño, 
+                    layout y presentación visual en el desarrollo web moderno.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">HTML Básico - Estructura y Semántica</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        HTML (HyperText Markup Language) es el lenguaje de marcado estándar para crear páginas web. 
+                        Aprendí la estructura básica con elementos como &lt;html&gt;, &lt;head&gt;, &lt;body&gt;, 
+                        etiquetas semánticas como &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, 
+                        &lt;article&gt;, &lt;footer&gt;, y elementos de contenido como párrafos, listas, enlaces, 
+                        imágenes y formularios. La semántica correcta mejora la accesibilidad y SEO.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">HTML Avanzado - Formularios y Multimedia</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Exploré elementos avanzados como formularios complejos con validación HTML5, tipos de input 
+                        especializados (email, date, range, color), elementos multimedia (&lt;video&gt;, &lt;audio&gt;, 
+                        &lt;canvas&gt;), APIs modernas como Web Storage, Geolocation, y técnicas de optimización 
+                        como lazy loading de imágenes, meta tags para SEO, y structured data para rich snippets.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">CSS Básico - Estilos y Selectores</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        CSS (Cascading Style Sheets) controla la presentación visual de HTML. Dominé selectores básicos 
+                        (elemento, clase, ID), propiedades fundamentales (color, font, margin, padding, border), 
+                        el modelo de caja (box model), unidades de medida (px, em, rem, %, vh, vw), y conceptos 
+                        de cascada, especificidad y herencia que determinan cómo se aplican los estilos.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">CSS Avanzado - Layout y Animaciones</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Implementé técnicas avanzadas como Flexbox para layouts unidimensionales, CSS Grid para 
+                        layouts bidimensionales complejos, posicionamiento avanzado (relative, absolute, fixed, sticky), 
+                        transformaciones 2D y 3D, animaciones con @keyframes, transiciones suaves, variables CSS 
+                        (custom properties), y técnicas de responsive design con media queries.
+                    </p>
+                </div>
+            </div>
+        </div>
+<!-- Proyectos -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Proyectos</h3>
+    
+    <div class="text-center text-lg text-gray-700">
+        <p class="mb-4">Explora un ejemplo práctico de lo aprendido en HTML y CSS:</p>
+        <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/Demostracion%20html.css" 
+           class="inline-block bg-warm-brown text-white px-6 py-3 rounded hover:bg-yellow-700 transition-colors"
+           target="_blank">
+            Ver Proyecto en GitHub
+        </a>
+    </div>
+</div>
+       
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>A crear la estructura básica de una página web usando HTML.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>A usar etiquetas importantes como header, nav, section y footer.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>A escribir formularios simples con campos como texto, correo y botón.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Animaciones y transiciones CSS para mejorar la interactividad</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>A aplicar estilos con CSS para cambiar colores, tamaños y márgenes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>A hacer que mi página se vea bien en diferentes tamaños de pantalla.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Optimización de rendimiento y mejores prácticas de desarrollo web</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Construcción progresiva de proyectos desde básico hasta avanzado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Experimentación práctica con diferentes propiedades y valores CSS</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Análisis de sitios web existentes para entender técnicas implementadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Viendo videos que explican cómo usar HTML y CSS desde cero.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Observando cómo están hechas otras páginas web.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Usando el navegador para ver los cambios y ajustar estilos.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 3</p>
+        </div>
+    </footer>
+</body>
+</html>

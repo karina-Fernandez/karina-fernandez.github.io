@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 6 - Componentes React con JSX y TypeScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 6</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">Componentes React con JSX y TypeScript</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Desarrollo tipado con TypeScript en React, interfaces, tipos personalizados, 
+                    y mejores prácticas para crear aplicaciones robustas y mantenibles.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">TypeScript Fundamentals en React</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        TypeScript es un superset de JavaScript que añade tipado estático, mejorando la detección 
+                        de errores en tiempo de desarrollo. Aprendí tipos básicos (string, number, boolean, array), 
+                        interfaces para definir estructuras de objetos, tipos union y intersection, generics para 
+                        reutilización de código, y utility types como Partial, Pick, y Omit. La integración con 
+                        React proporciona mejor IntelliSense, refactoring seguro, y documentación automática.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Tipado de Props y State en Componentes</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Definí interfaces para props de componentes, especificando tipos exactos para cada propiedad, 
+                        props opcionales con ?, y props con valores por defecto. Aprendí a tipar useState con tipos 
+                        específicos, useEffect con dependencias tipadas, y event handlers con tipos de eventos 
+                        apropiados. Implementé generic components que pueden trabajar con diferentes tipos de datos 
+                        manteniendo type safety.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">JSX Avanzado con TypeScript</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        JSX con TypeScript proporciona verificación de tipos en tiempo de compilación para elementos 
+                        y componentes. Dominé el tipado de children props, render props patterns, higher-order 
+                        components (HOCs), y compound components. Aprendí a crear custom hooks tipados, context 
+                        providers con tipos seguros, y técnicas avanzadas como conditional rendering basado en tipos 
+                        y discriminated unions para diferentes variantes de componentes.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Patrones Avanzados y Best Practices</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Implementé patrones avanzados como compound components para APIs flexibles, render props 
+                        para lógica reutilizable, y custom hooks para encapsular lógica stateful. Aprendí técnicas 
+                        de optimización como React.memo con comparaciones tipadas, useMemo y useCallback con 
+                        dependencias correctamente tipadas, y lazy loading de componentes con Suspense. Establecí 
+                        convenciones de naming, estructura de archivos, y documentación con JSDoc.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+<!-- Proyectos -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Proyectos</h3>
+    <p class="text-center text-lg text-gray-700 mb-6">
+        Explora un ejemplo práctico de lo aprendido en React con JSX y TypeScript:
+    </p>
+    <div class="flex justify-center">
+        <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/React%20con%20JSX%20y%20TypeScript" target="_blank"
+           class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+            Ver Proyecto en GitHub
+        </a>
+    </div>
+</div>
+
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>TypeScript como herramienta fundamental para desarrollo React escalable</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Tipado estricto de props, state, y event handlers para mayor robustez</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Patrones avanzados como generic components y discriminated unions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Integración de librerías externas con tipos seguros y definiciones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Arquitectura modular y escalable para aplicaciones enterprise</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Testing estrategies y debugging con TypeScript en React</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Migración gradual de proyectos JavaScript existentes a TypeScript</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Análisis de errores de compilación para entender el sistema de tipos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Exploración de DefinitelyTyped para tipos de librerías populares</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Práctica con configuraciones avanzadas de tsconfig.json</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Refactoring continuo para mejorar la expresividad de los tipos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Colaboración en code reviews enfocadas en type safety</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 6</p>
+        </div>
+    </footer>
+</body>
+</html>

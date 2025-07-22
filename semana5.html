@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 5 - Desarrollo de Aplicaciones Web con React</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 5</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">Desarrollo de Aplicaciones Web con React</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Introducción a React, la biblioteca de JavaScript para construir interfaces de usuario 
+                    interactivas, componentes reutilizables y gestión de estado en aplicaciones modernas.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Fundamentos de React - Componentes y JSX</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        React es una biblioteca de JavaScript para construir interfaces de usuario basada en componentes. 
+                        Aprendí JSX (JavaScript XML), una extensión de sintaxis que permite escribir elementos HTML 
+                        dentro de JavaScript. Dominé la creación de componentes funcionales y de clase, el paso de props 
+                        para comunicación entre componentes, y el concepto de Virtual DOM que optimiza las actualizaciones 
+                        del DOM real para mejorar el rendimiento de las aplicaciones.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Estado y Ciclo de Vida de Componentes</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        El estado (state) permite que los componentes mantengan y actualicen datos dinámicos. 
+                        Aprendí a usar useState hook para componentes funcionales y this.state para componentes de clase. 
+                        Exploré el ciclo de vida de componentes con métodos como componentDidMount, componentDidUpdate, 
+                        y componentWillUnmount, entendiendo cuándo y cómo ejecutar código en diferentes fases del 
+                        ciclo de vida del componente.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Event Handling y Formularios en React</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        React maneja eventos de forma sintética (SyntheticEvents) para consistencia cross-browser. 
+                        Implementé event handlers para clicks, form submissions, y keyboard events. Aprendí patrones 
+                        para formularios controlados donde React controla el estado de los inputs, validación en tiempo 
+                        real, y técnicas para manejar múltiples inputs eficientemente usando computed property names 
+                        y event delegation.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Renderizado Condicional y Listas</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Dominé técnicas de renderizado condicional usando operadores ternarios, logical AND (&&), 
+                        y if statements para mostrar contenido basado en estado o props. Aprendí a renderizar listas 
+                        dinámicas usando map(), la importancia de keys únicas para optimización de React, y patrones 
+                        para manejar listas vacías, loading states, y error states en la interfaz de usuario.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+     <!-- Proyectos -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Proyectos</h3>
+    <p class="text-center text-lg text-gray-700 mb-6">
+        Explora un ejemplo práctico de lo aprendido en el desarrollo con React:
+    </p>
+    <div class="flex justify-center">
+        <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/React" target="_blank"
+           class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+            Ver Proyecto en GitHub
+        </a>
+    </div>
+</div>
+   
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Paradigma de componentes para crear interfaces modulares y reutilizables</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>JSX como sintaxis declarativa para describir interfaces de usuario</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Gestión de estado local con useState y efectos con useEffect</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Comunicación entre componentes mediante props y callback functions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Patrones de React para formularios, listas, y renderizado condicional</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Optimización de rendimiento y mejores prácticas de desarrollo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Construcción progresiva desde componentes simples hasta aplicaciones complejas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Experimentación con React DevTools para debugging y optimización</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Análisis de código fuente de librerías populares de React</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Práctica con diferentes patrones de diseño y arquitecturas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Consulta activa de documentación oficial y recursos de la comunidad</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Refactoring continuo para mejorar estructura y mantenibilidad</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 5</p>
+        </div>
+    </footer>
+</body>
+</html>

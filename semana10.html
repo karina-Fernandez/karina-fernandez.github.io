@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 10 - Desarrollo Backend Java Spring</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 10</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+  
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">Desarrollo de Aplicaciones Web con JSP, Jakarta EE y Spri</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                El desarrollo de aplicaciones web modernas en Java se apoya en tecnologías como JSP,
+                 Jakarta EE y el framework Spring. Estas herramientas permiten construir sistemas robustos,
+                  seguros y escalables, utilizando arquitecturas como MVC y principios como la inversión de control
+                (IoC) y la inyección de dependencias.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Teoría Resumida con Conceptos Clave</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Apache Tomcat: Servidor web que funciona como contenedor de servlets y páginas JSP.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>JSP (Java Server Pages): Tecnología que permite generar contenido dinámico del lado del servidor utilizando sintaxis Java incrustada en HTML.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Objetos implícitos: Variables como request, response, session y application que facilitan el manejo de datos en JSP.</span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Arquitectura MVC</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Modelo-Vista-Controlador: Patrón que divide la aplicación en capas. La vista presenta los datos, el controlador los procesa, y el modelo se encarga de la lógica y los datos.</span>
+                        </li>
+                        
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Maven y Gradle</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Maven: Gestor de proyectos que automatiza la compilación, pruebas y empaquetado. Usa el archivo pom.xml.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Gradle: Alternativa moderna y flexible a Maven, usa scripts Groovy.</span>
+                        </li>
+                </div>
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Jakarta EE</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span></span>Plataforma para desarrollar aplicaciones empresariales en Java. Incluye soporte para servlets, JSP, seguridad, persistencia, entre otros.</span>
+                        </li>
+                </div>
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Spring Framework</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span></span>Framework para aplicaciones Java empresariales.</span>
+                        </li>
+                                <li class="flex items-start">
+                            <span class="text-warm-brown mr-6 mt-1">•</span>
+                            <span>IoC (Inversión de Control): El framework gestiona la creación y ciclo de vida de los objetos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-6 mt-1">•</span>
+                            <span>DI (Inyección de Dependencias): Las dependencias se inyectan automáticamente en lugar de ser instanciadas manualmente.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Spring Boot: Simplifica la configuración y despliegue de aplicaciones Spring.</span>
+                        </li>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Desarrollo de APIs REST con Spring Boot</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span></span>Se crea una API utilizando controllers, models, repositories y services.</span>
+                        </li>
+                                <li class="flex items-start">
+                            <span class="text-warm-brown mr-6 mt-1">•</span>
+                            <span>Se configura la conexión con MySQL.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-6 mt-1">•</span>
+                            <span>Se pueden realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) y otras como filtros, paginación y validaciones.</span>
+                        </li>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Proyectos -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">HERRAMIENTAS</h3>
+    <p class="text-center text-lg text-gray-700 mb-6">
+        Explora la guia Backend Java Spring:
+    </p>
+<div class="flex justify-center mb-4">
+    <a href="https://drive.google.com/file/d/1YQ6pHjolmSxFuH4R-6Z6_-0qCpPUjM44/view?usp=sharing" target="_blank"
+       class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+        ver guia
+    </a>  
+</div>
+    
+</div>
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 9</p>
+        </div>
+    </footer>
+</body>
+</html>

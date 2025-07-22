@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 2 - Visual Studio Code y GitHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 2</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">Visual Studio Code y GitHub</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Herramientas de desarrollo profesional, control de versiones, colaboración en proyectos 
+                    y flujos de trabajo modernos en el desarrollo de software.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Visual Studio Code - Editor Profesional</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Visual Studio Code es un editor de código fuente gratuito y de código abierto desarrollado por Microsoft. 
+                        Ofrece soporte para múltiples lenguajes de programación, depuración integrada, control de versiones Git, 
+                        terminal integrado y un ecosistema extenso de extensiones. Su interfaz intuitiva y características avanzadas 
+                        como IntelliSense, refactoring automático y snippets lo convierten en una herramienta esencial para 
+                        desarrolladores modernos.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">GitHub - Plataforma de Colaboración</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        GitHub es una plataforma de desarrollo colaborativo basada en Git que permite a los desarrolladores 
+                        almacenar, gestionar y colaborar en proyectos de código. Proporciona funcionalidades como repositorios 
+                        remotos, issues tracking, pull requests, GitHub Actions para CI/CD, y GitHub Pages para hosting. 
+                        Es fundamental para el trabajo en equipo, contribuciones open source y gestión de proyectos de software.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Control de Versiones con Git</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Git es un sistema de control de versiones distribuido que rastrea cambios en archivos y coordina 
+                        el trabajo entre múltiples desarrolladores. Permite crear ramas para desarrollo paralelo, fusionar 
+                        cambios, revertir modificaciones y mantener un historial completo del proyecto. Los conceptos clave 
+                        incluyen commits, branches, merges, y workflows como GitFlow para gestión eficiente de releases.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Flujos de Trabajo Colaborativos</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Los flujos de trabajo colaborativos definen cómo los equipos organizan y gestionan el desarrollo 
+                        de software. Incluyen prácticas como feature branches, pull requests para revisión de código, 
+                        integración continua, y deployment automático. Estos procesos aseguran calidad del código, 
+                        facilitan la colaboración y minimizan conflictos en proyectos con múltiples contribuidores.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+ <!-- Herramientas Utilizadas -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Herramientas Utilizadas</h3>
+
+    <ul class="space-y-6 text-lg text-gray-700 list-disc list-inside">
+        <li>
+            <strong>Descargar Visual Studio Code:</strong>
+            <a href="https://code.visualstudio.com/Download" class="text-warm-brown underline hover:text-yellow-700" target="_blank">
+                https://code.visualstudio.com/Download
+            </a>
+        </li>
+        <li>
+            <strong>Crear usuario en GitHub:</strong>
+            <a href="https://github.com/login" class="text-warm-brown underline hover:text-yellow-700" target="_blank">
+                https://github.com/login
+            </a>
+        </li>
+    </ul>
+</div>
+
+<!-- Videos Tutoriales -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Videos Tutoriales</h3>
+
+    <ul class="space-y-6 text-lg text-gray-700 list-disc list-inside">
+        <li>
+            <strong>Instalar y configurar Visual Studio Code:</strong>
+            <a href="https://www.youtube.com/watch?v=X_Z7d04x9-E" class="text-warm-brown underline hover:text-yellow-700" target="_blank">
+                https://www.youtube.com/watch?v=X_Z7d04x9-E
+            </a>
+        </li>
+        <li>
+            <strong>GitHub Básico:</strong>
+            <a href="https://www.youtube.com/watch?v=mCVQgSyjCkI&list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW" class="text-warm-brown underline hover:text-yellow-700" target="_blank">
+                https://www.youtube.com/watch?v=mCVQgSyjCkI&list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW
+            </a>
+        </li>
+    </ul>
+</div>
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Configuración profesional de entornos de desarrollo con VSC y extensiones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Gestión completa de repositorios Git tanto locales como remotos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Uso básico de GitHub </span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Mejores prácticas para colaboración en equipos de desarrollo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Configuración práctica de herramientas en pequeños proyectos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Simulación de escenarios en ramas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Exploración de documentación oficial de GitHub y Git</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Análisis de proyectos open source para entender mejor </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 2</p>
+        </div>
+    </footer>
+</body>
+</html>

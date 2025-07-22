@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernandez Bendezu Ruth Karina - Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .organic-bg {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .organic-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 200%;
+            height: 200%;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 50%),
+                radial-gradient(circle at 40% 70%, rgba(255,255,255,0.15) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(255,255,255,0.25) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .content-wrapper {
+            position: relative;
+            z-index: 2;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+<body class="font-sans text-dark-gray">
+    <!-- Header Section -->
+    <header class="organic-bg min-h-screen">
+        <div class="content-wrapper">
+            <!-- Profile Section -->
+            <div class="text-center pt-16 pb-8">
+                <div class="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                <img src="karina.jpg" alt="Ruth Karina" class="w-full h-full object-cover">
+                </div>
+                
+                <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-medium text-dark-gray mb-4 tracking-wide">
+                    Fernandez Bendezu Ruth Karina
+                </h1>
+                
+                <div class="mb-2">
+                    <span class="text-warm-brown font-medium text-lg">Correo</span>
+                </div>
+                <div class="text-warm-brown text-lg mb-8">
+                    Karina.fernanezk.f9@gmail.com
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="text-center mb-20">
+                <p class="text-gray-500 text-lg max-w-2xl mx-auto leading-relaxed">
+                    Soy estudiante de Ingeniería en Sistemas Computacionales, apasionada por el desarrollo web, 
+                    la programación y el diseño de soluciones tecnológicas. Este portafolio muestra los proyectos, 
+                    aprendizajes y reflexiones que he desarrollado a lo largo del curso de Aplicación Web. 
+                    ¡Gracias por visitar!
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Temas Section -->
+    <section id="temas" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Section Title -->
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center mb-8">
+                    <div class="h-px bg-gray-300 w-24"></div>
+                    <h2 class="font-serif text-3xl md:text-4xl font-medium text-dark-gray mx-8">TEMAS A TRATAR</h2>
+                    <div class="h-px bg-gray-300 w-24"></div>
+                </div>
+            </div>
+
+            <!-- Temas Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">HTML BÁSICO Y AVANZADO</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Estructura y semántica web, elementos avanzados y mejores prácticas para el desarrollo.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">CSS BÁSICO Y AVANZADO</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Estilos, layouts, animaciones y técnicas avanzadas de diseño responsivo.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">CSS CON BOOTSTRAP</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Framework CSS para desarrollo rápido y responsivo con componentes predefinidos.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">CSS CON TAILWIND</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Utility-first CSS framework para diseños personalizados y eficientes.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">JAVASCRIPT BÁSICO</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Fundamentos de programación y manipulación del DOM para interactividad.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">REACT</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Biblioteca para construir interfaces de usuario interactivas y dinámicas.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">REACT CON JSX Y TYPESCRIPT</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Desarrollo tipado y sintaxis JSX para aplicaciones robustas y escalables.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-lg p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-serif text-xl font-medium text-dark-gray mb-4">HOOKS EN REACT</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">
+                        Gestión de estado y efectos en componentes funcionales modernos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Semanas Section -->
+    <section id="semanas" class="py-20 bg-light-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="flex items-center justify-center mb-8">
+                    <div class="h-px bg-gray-300 w-24"></div>
+                    <h2 class="font-serif text-3xl md:text-4xl font-medium text-dark-gray mx-8">SEMANAS DE APRENDIZAJE</h2>
+                    <div class="h-px bg-gray-300 w-24"></div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Semana 1 -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="text-warm-brown font-serif text-2xl font-medium mb-4">SEMANA 1</div>
+                        <h4 class="font-medium text-dark-gray mb-4 text-lg">Tecnologías de Desarrollo de Software</h4>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                            ¿Cómo funciona la web? DNS, Contexto de Aplicaciones de Internet, 
+                            FrontEnd y BackEnd, herramientas de desarrollo.
+                        </p>
+                        <button onclick="window.open('semana1.html', '_blank')" 
+                                class="w-full bg-warm-brown hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded transition-colors">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Semana 2 -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="text-warm-brown font-serif text-2xl font-medium mb-4">SEMANA 2</div>
+                        <h4 class="font-medium text-dark-gray mb-4 text-lg">Visual Studio Code y GitHub</h4>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                            Herramientas de desarrollo, control de versiones y colaboración en proyectos.
+                        </p>
+                        <button onclick="window.open('semana2.html', '_blank')" 
+                                class="w-full bg-warm-brown hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded transition-colors">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Semana 3 -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="text-warm-brown font-serif text-2xl font-medium mb-4">SEMANA 3</div>
+                        <h4 class="font-medium text-dark-gray mb-4 text-lg">HTML y CSS</h4>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                            HTML Básico y Avanzado, CSS Básico y Avanzado para el diseño web.
+                        </p>
+                        <button onclick="window.open('semana3.html', '_blank')" 
+                                class="w-full bg-warm-brown hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded transition-colors">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Semana 4 -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="text-warm-brown font-serif text-2xl font-medium mb-4">SEMANA 4</div>
+                        <h4 class="font-medium text-dark-gray mb-4 text-lg">Frameworks CSS y JavaScript</h4>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                            CSS con Bootstrap, CSS con Tailwind y JavaScript Básico.
+                        </p>
+                        <button onclick="window.open('semana4.html', '_blank')" 
+                                class="w-full bg-warm-brown hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded transition-colors">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Semana 5 -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="text-warm-brown font-serif text-2xl font-medium mb-4">SEMANA 5</div>
+                        <h4 class="font-medium text-dark-gray mb-4 text-lg">React</h4>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                            Desarrollo de Aplicaciones Web con React, componentes y estado.
+                        </p>
+                        <button onclick="window.open('semana5.html', '_blank')" 
+                                class="w-full bg-warm-brown hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded transition-colors">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Semana 6 -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="text-warm-brown font-serif text-2xl font-medium mb-4">SEMANA 6</div>
+                        <h4 class="font-medium text-dark-gray mb-4 text-lg">React con JSX y TypeScript</h4>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                            Componentes React con JSX y TypeScript para desarrollo tipado.
+                        </p>
+                        <button onclick="window.open('semana6.html', '_blank')" 
+                                class="w-full bg-warm-brown hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded transition-colors">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Semana 7 -->
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-8">
+                        <div class="text-warm-brown font-serif text-2xl font-medium mb-4">SEMANA 7</div>
+                        <h4 class="font-medium text-dark-gray mb-4 text-lg">Hooks en React</h4>
+                        <p class="text-gray-500 text-sm mb-6 leading-relaxed">
+                            Uso de Hooks en React para gestión de estado y efectos.
+                        </p>
+                        <button onclick="window.open('semana7.html', '_blank')" 
+                                class="w-full bg-warm-brown hover:bg-yellow-600 text-white font-medium py-3 px-6 rounded transition-colors">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reflexión Final Section -->
+    <section id="reflexion" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="flex items-center justify-center mb-8">
+                        <div class="h-px bg-gray-300 w-24"></div>
+                        <h2 class="font-serif text-3xl md:text-4xl font-medium text-dark-gray mx-8">REFLEXIÓN FINAL</h2>
+                        <div class="h-px bg-gray-300 w-24"></div>
+                    </div>
+                </div>
+                
+                <div class="bg-light-gray rounded-lg p-12">
+                    <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                        A lo largo de este curso de Aplicación Web, he experimentado un crecimiento significativo 
+                        en mis habilidades técnicas y mi comprensión del desarrollo web moderno.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-lg mb-6">
+                        Cada semana ha representado un nuevo desafío y una oportunidad de aprendizaje, desde los 
+                        fundamentos de HTML y CSS hasta las tecnologías más avanzadas como React y TypeScript.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        Este portafolio no solo documenta mi progreso académico, sino que también refleja mi 
+                        pasión por la tecnología y mi compromiso con el aprendizaje continuo en el campo de 
+                        la ingeniería de sistemas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bibliografía Section -->
+    <section id="bibliografia" class="py-20 bg-light-gray">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="flex items-center justify-center mb-8">
+                        <div class="h-px bg-gray-300 w-24"></div>
+                        <h2 class="font-serif text-3xl md:text-4xl font-medium text-dark-gray mx-8">BIBLIOGRAFÍA</h2>
+                        <div class="h-px bg-gray-300 w-24"></div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-12">
+                    <ul class="space-y-6 text-gray-600">
+                        <li class="border-l-4 border-warm-brown pl-6">
+                            <strong>MDN Web Docs.</strong> (2024). HTML: HyperText Markup Language. 
+                            Mozilla Developer Network. https://developer.mozilla.org/es/docs/Web/HTML
+                        </li>
+                        <li class="border-l-4 border-warm-brown pl-6">
+                            <strong>MDN Web Docs.</strong> (2024). CSS: Cascading Style Sheets. 
+                            Mozilla Developer Network. https://developer.mozilla.org/es/docs/Web/CSS
+                        </li>
+                        <li class="border-l-4 border-warm-brown pl-6">
+                            <strong>Bootstrap Team.</strong> (2024). Bootstrap Documentation. 
+                            https://getbootstrap.com/docs/
+                        </li>
+                        <li class="border-l-4 border-warm-brown pl-6">
+                            <strong>Tailwind Labs.</strong> (2024). Tailwind CSS Documentation. 
+                            https://tailwindcss.com/docs
+                        </li>
+                        <li class="border-l-4 border-warm-brown pl-6">
+                            <strong>React Team.</strong> (2024). React Documentation. 
+                            https://react.dev/
+                        </li>
+                        <li class="border-l-4 border-warm-brown pl-6">
+                            <strong>Microsoft.</strong> (2024). TypeScript Documentation. 
+                            https://www.typescriptlang.org/docs/
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-2 text-lg">&copy; 2024 Ruth Karina Fernández Bendezú</p>
+            <p class="text-gray-400">Portafolio Electrónico - Curso de Aplicación Web</p>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 4 - CSS con Bootstrap, Tailwind y JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 4</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">CSS con Bootstrap, CSS con Tailwind y JavaScript Básico</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Frameworks CSS modernos para desarrollo rápido y eficiente, junto con fundamentos 
+                    de JavaScript para agregar interactividad y dinamismo a las aplicaciones web.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">CSS con Bootstrap - Framework Component-Based</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Bootstrap es un framework CSS que proporciona componentes prediseñados y un sistema de grid 
+                        responsivo. Aprendí a utilizar clases utilitarias, componentes como navbar, cards, modals, 
+                        carousel, y el sistema de grid de 12 columnas. Bootstrap acelera el desarrollo proporcionando 
+                        estilos consistentes y componentes JavaScript integrados, ideal para prototipos rápidos y 
+                        proyectos que requieren un diseño profesional sin personalización extensiva.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">CSS con Tailwind - Utility-First Approach</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Tailwind CSS es un framework utility-first que proporciona clases de bajo nivel para construir 
+                        diseños personalizados. Dominé conceptos como spacing (m-, p-), sizing (w-, h-), colors, 
+                        typography, flexbox utilities, y responsive design con prefijos (sm:, md:, lg:). Tailwind 
+                        permite mayor control y personalización, resultando en diseños únicos y CSS optimizado 
+                        mediante purging de clases no utilizadas.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">JavaScript Básico - Fundamentos del Lenguaje</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        JavaScript es el lenguaje de programación que añade interactividad a las páginas web. 
+                        Aprendí sintaxis básica, variables (var, let, const), tipos de datos (string, number, boolean, 
+                        object, array), operadores, estructuras de control (if/else, loops), funciones, y scope. 
+                        También exploré conceptos fundamentales como hoisting, closures, y la diferencia entre 
+                        declaración de funciones y expresiones de función.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">DOM Manipulation y Event Handling</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        El DOM (Document Object Model) permite a JavaScript interactuar con elementos HTML. 
+                        Aprendí métodos de selección (getElementById, querySelector), manipulación de contenido 
+                        (innerHTML, textContent), modificación de atributos y estilos, creación y eliminación 
+                        de elementos. Implementé event listeners para manejar interacciones del usuario como 
+                        clicks, form submissions, y keyboard events, creando experiencias web dinámicas.
+                    </p>
+                </div>
+            </div>
+        </div>
+<!-- Proyectos -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Proyectos</h3>
+    <p class="text-center text-lg text-gray-700 mb-6">
+        Explora ejemplos prácticos de lo aprendido en esta semana:
+    </p>
+    <div class="flex flex-col items-center space-y-4">
+        <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/CSS%20con%20Bootstrap" target="_blank"
+           class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+            Ver Proyecto CSS con Bootstrap
+        </a>
+        <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/Tailwind" target="_blank"
+           class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+            Ver Proyecto CSS con Tailwind
+        </a>
+        <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/CODIGO%20FUENTE-JAVASCRIPT-GRUPO7/CODIGO%20FUENTE" target="_blank"
+           class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+            Ver Proyecto JavaScript Básico
+        </a>
+    </div>
+</div>
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Diferencias entre frameworks CSS: Bootstrap (component-based) vs Tailwind (utility-first)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Ventajas y desventajas de cada enfoque según el tipo de proyecto</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Fundamentos sólidos de JavaScript: sintaxis, tipos de datos, y control de flujo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Manipulación del DOM para crear interfaces dinámicas e interactivas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Event handling y mejores prácticas para experiencia de usuario</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Persistencia de datos con localStorage y APIs del navegador</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Comparación práctica entre Bootstrap y Tailwind en proyectos similares</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Construcción incremental de aplicaciones JavaScript desde cero</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Debugging sistemático usando herramientas de desarrollo del navegador</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Experimentación con diferentes patrones de código y arquitecturas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Análisis de código fuente de librerías para entender implementaciones</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Iteración continua basada en feedback de usabilidad y rendimiento</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 4</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 1 - Tecnologías de Desarrollo de Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 1</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">Tecnologías de Desarrollo de Software</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    ¿Cómo funciona la web? / DNS, Contexto de Aplicaciones de Internet, 
+                    FrontEnd (Librerías y herramientas del desarrollo frontend), 
+                    BackEnd (Librerías y herramientas del desarrollo backend)
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">¿Cómo funciona la web?</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        La web funciona mediante un sistema cliente-servidor donde los navegadores (clientes) 
+                        solicitan recursos a servidores web a través del protocolo HTTP/HTTPS. El proceso 
+                        involucra la resolución DNS para convertir nombres de dominio en direcciones IP, 
+                        permitiendo que los usuarios accedan a sitios web de manera intuitiva usando nombres 
+                        fáciles de recordar en lugar de direcciones numéricas complejas.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Sistema DNS (Domain Name System)</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        El DNS es como la "guía telefónica" de internet, traduciendo nombres de dominio legibles 
+                        (como google.com) en direcciones IP numéricas que las computadoras pueden entender. 
+                        Este sistema jerárquico distribuido permite que millones de usuarios accedan a sitios 
+                        web sin necesidad de memorizar direcciones IP complejas, facilitando la navegación 
+                        y el acceso a recursos en línea.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Frontend - Desarrollo del Lado del Cliente</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        El frontend es la parte visible de una aplicación web con la que interactúan directamente 
+                        los usuarios. Incluye tecnologías fundamentales como HTML (estructura), CSS (presentación) 
+                        y JavaScript (interactividad), así como frameworks modernos como React, Vue.js, Angular. 
+                        También abarca herramientas de desarrollo como bundlers (Webpack, Vite), preprocesadores 
+                        CSS (Sass, Less) y librerías de componentes.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Backend - Desarrollo del Lado del Servidor</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        El backend es la parte del servidor que maneja la lógica de negocio, bases de datos, 
+                        autenticación y APIs. Utiliza lenguajes como Node.js, Python, Java, PHP, C# y frameworks 
+                        como Express.js, Django, Spring Boot, Laravel. Incluye sistemas de gestión de bases de 
+                        datos (MySQL, PostgreSQL, MongoDB), servicios en la nube (AWS, Azure, Google Cloud) y 
+                        herramientas de DevOps para despliegue y monitoreo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ejercicios de Laboratorio -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Ejercicios de Laboratorio - Resultados</h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 01</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Reconocer y utilizar Visual Studio Code
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Familiarizarse con las áreas de la pantalla principal y aplicaciones de la barra de menús.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Exploré sistemáticamente las diferentes áreas de VSC: el explorador de archivos para navegación 
+                        de proyectos, el editor principal con resaltado de sintaxis, el terminal integrado para comandos, 
+                        y el panel de extensiones. Aprendí a personalizar el entorno de trabajo, configurar temas, 
+                        y utilizar la barra de menús para acceder a funcionalidades avanzadas como depuración y control de versiones.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 02</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Paleta de comandos y GitHub Codespaces
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Activar la paleta de comandos y usar GitHub Codespaces.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Activé la paleta de comandos (Ctrl+Shift+P) y practiqué comandos esenciales como "Format Document", 
+                        "Toggle Terminal", "Git: Commit". Experimenté con GitHub Codespaces, creando un entorno de desarrollo 
+                        en la nube que permite programar desde cualquier dispositivo con navegador, entendiendo sus ventajas 
+                        para colaboración remota y acceso universal al código.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 03</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Terminal y comandos Git
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Usar terminal integrada y comandos Git básicos.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Utilicé la terminal integrada para ejecutar comandos Git fundamentales: <code>git init</code> para 
+                        inicializar repositorios, <code>git add</code> para preparar cambios, <code>git commit</code> para 
+                        confirmar modificaciones, <code>git checkout</code> para cambiar ramas, y <code>git push</code> para 
+                        subir cambios. Practiqué la creación de ramas con <code>git branch</code> y fusión con <code>git merge</code>.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 04</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Emmet y fragmentos de código
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Usar disparadores Emmet y crear fragmentos personalizados.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Aprendí a usar disparadores Emmet para generar código HTML/CSS rápidamente: <code>div.container>ul>li*5</code> 
+                        para estructuras complejas, <code>!</code> para plantillas HTML5. Creé fragmentos de código personalizados 
+                        para estructuras repetitivas como componentes React, configuraciones de CSS Grid, y plantillas de funciones, 
+                        aumentando significativamente la velocidad de desarrollo.
+                    </p>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg md:col-span-2">
+                    <div class="text-warm-brown font-serif text-xl font-medium mb-4">Ejercicio 05</div>
+                    <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+                        Keyboard shortcuts en VSC
+                    </h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        <strong>Objetivo:</strong> Dominar atajos de teclado para aumentar productividad.
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Memoricé y practiqué atajos esenciales: <code>Ctrl+D</code> para selección múltiple de palabras idénticas, 
+                        <code>Ctrl+Shift+L</code> para seleccionar todas las ocurrencias, <code>Alt+↑/↓</code> para mover líneas, 
+                        <code>Ctrl+Shift+K</code> para eliminar líneas, <code>Ctrl+/</code> para comentar código. Estos atajos 
+                        mejoraron dramáticamente mi velocidad de codificación y eficiencia en la edición de código.
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!-- Proyectos -->
+    <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Proyecto Destacado</h3>
+    
+    <div class="bg-light-gray p-8 rounded-lg">
+        <div class="text-warm-brown font-serif text-xl font-medium mb-4">Demostración en Visual Studio Code</div>
+        <h4 class="font-semibold text-dark-gray mb-3 text-lg">
+            Accede al repositorio en GitHub
+        </h4>
+        <p class="text-gray-700 leading-relaxed mb-4">
+            Este proyecto contiene una demostración práctica realizada en Visual Studio Code, aplicando lo aprendido en los ejercicios de laboratorio. Se muestra la organización del entorno de trabajo, uso de comandos Git, fragmentos de código y más.
+        </p>
+        <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/Demostracion-vsc" target="_blank" class="inline-block bg-warm-brown text-white px-6 py-3 rounded hover:bg-yellow-700 transition-colors">
+            Ver Proyecto en GitHub
+        </a>
+    </div>
+</div>
+
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>La arquitectura fundamental cliente-servidor que sustenta toda la web moderna</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>El funcionamiento del sistema DNS como infraestructura crítica de internet</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Diferencias claras entre desarrollo frontend y backend, sus tecnologías y responsabilidades</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Herramientas profesionales de desarrollo como Visual Studio Code y sus capacidades</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Control de versiones con Git como práctica esencial en desarrollo de software</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Técnicas de productividad con Emmet, snippets y atajos de teclado</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Práctica hands-on con herramientas reales en proyectos concretos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Experimentación sistemática con diferentes comandos y funcionalidades</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Resolución de problemas paso a paso mediante ensayo y error controlado</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Consulta activa de documentación oficial y recursos en línea</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Repetición y práctica constante hasta automatizar los procesos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Reflexión sobre cada ejercicio para consolidar el aprendizaje</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 1</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 16 - Proyecto final</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 16</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+  
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">“Serenity AI Chat: Aplicación Web Inteligente para el Análisis de Sentimientos y Lenguaje Tóxico”</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                El proyecto "Serenity AI Chat" es una aplicación web que combina tecnologías 
+                modernas y herramientas de inteligencia artificial para ofrecer un análisis automático del sentimiento
+                 y la toxicidad de textos ingresados por los usuarios. Desarrollado en el marco del curso Desarrollo de 
+                 Aplicaciones Web, este sistema demuestra la integración de un backend en Python (Flask) y un frontend 
+                 en React.js, conectados a una base de datos MySQL y potenciados por bibliotecas de NLP como TextBlob y 
+                 la Perspective API de Google.El objetivo principal fue brindar una herramienta funcional,
+                  intuitiva y segura que permita a los usuarios reflexionar sobre su comunicación escrita, 
+                  clasificando sus mensajes como positivos, negativos, neutros o potencialmente ofensivos.
+                </p>    
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Arquitectura Cliente-Servidor</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Separación lógica del frontend (React) y backend (Flask).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Comunicación asincrónica vía API RESTful.</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Inteligencia Artificial</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>TextBlob para análisis de sentimiento (polaridad emocional).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Perspective API para detección de toxicidad, insultos y amenazas en el texto.</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Autenticación y Seguridad</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Uso de JSON Web Tokens (JWT) para proteger rutas sensibles y mantener sesiones seguras.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Cifrado de contraseñas y validación de datos para prevenir ataques.</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Frontend Moderno</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Desarrollo con React.js y diseño responsive con HTML5, CSS3 y JavaScript.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Interfaz amigable, accesible y estéticamente coherente con la temática emocional del proyecto.</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Base de Datos y ORM</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Gestión de usuarios con MySQL.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Uso de SQLAlchemy como ORM para simplificar las operaciones de base de datos.</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Experiencia de Usuario (UX/UI)</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Paleta de colores pastel, tipografías legibles y componentes interactivos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Retroalimentación visual inmediata y mensajes interpretativos basados en el análisis IA.</span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Pruebas del Sistema</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Pruebas unitarias, funcionales y de integración aseguraron estabilidad, velocidad y precisión.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+<!-- Proyectos -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Proyectos</h3>
+    <p class="text-center text-lg text-gray-700 mb-6">
+        Visualizar el Proyecto Final en github
+    </p>
+<div class="flex justify-center mb-4">
+    <a href="https://github.com/karina-Fernandez/ProyectoFinal" target="_blank"
+       class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+        Ver Informe final 
+    </a>  
+</div>
+
+<div class="flex justify-center">
+    <a href="https://github.com/karina-Fernandez/ProyectoFinal" target="_blank"
+       class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+        Ver Proyecto en Hosting
+    </a>  
+</div>
+
+    
+</div>
+<!-- Reflexión -->
+<div class="bg-white rounded-lg shadow-sm p-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+    
+    <div class="grid md:grid-cols-2 gap-12">
+        <div class="border-l-4 border-warm-brown pl-8">
+            <h4 class="text-2xl font-semibold text-warm-brown mb-4 text-center">¿Qué Aprendí?</h4>
+            <p class="text-gray-700 leading-relaxed text-lg text-justify">
+            Aprendí a desarrollar una aplicación web completa integrando múltiples tecnologías
+             modernas como Flask, React.js, MySQL y bibliotecas de inteligencia artificial como 
+             TextBlob y Perspective API. Comprendí cómo funciona la autenticación segura mediante
+              JWT, cómo estructurar una API RESTful, y cómo aplicar principios de diseño UX/UI centrados
+               en el usuario. También aprendí a utilizar IA para el análisis de sentimientos y lenguaje tóxico,
+                reconociendo su potencial ético y social en la mejora de la comunicación digital.
+        </div>
+
+        <div class="border-l-4 border-warm-brown pl-8">
+            <h4 class="text-2xl font-semibold text-warm-brown mb-4 text-center">¿Cómo Aprendí?</h4>
+            <p class="text-gray-700 leading-relaxed text-lg text-justify">
+            Aprendí a desarrollar una aplicación web completa integrando múltiples 
+            tecnologías modernas como Flask, React.js, MySQL y bibliotecas de inteligencia 
+            artificial como TextBlob y Perspective API. Comprendí cómo funciona la autenticación 
+            segura mediante JWT, cómo estructurar una API RESTful, y cómo aplicar principios de
+             diseño UX/UI centrados en el usuario. También aprendí a utilizar IA para el análisis 
+             de sentimientos y lenguaje tóxico, reconociendo su potencial ético y social en la mejora
+              de la comunicación digital.
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 16</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 7 - Uso de Hooks en React</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 7</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">Uso de Hooks en React</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Hooks avanzados de React para gestión de estado, efectos, optimización de rendimiento, 
+                    y creación de custom hooks reutilizables para lógica compleja.
+                </p>
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Temas Aprendidos</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Hooks Fundamentales - useState, useEffect, useContext</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Los hooks fundamentales forman la base de la programación funcional en React. useState 
+                        maneja estado local con actualizaciones inmutables, useEffect gestiona efectos secundarios 
+                        como API calls, subscripciones, y cleanup, mientras useContext proporciona acceso a datos 
+                        globales sin prop drilling. Dominé patrones como lazy initial state, functional updates, 
+                        dependency arrays optimizadas, y context providers con valores memoizados para evitar 
+                        re-renders innecesarios.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Hooks de Optimización - useMemo, useCallback, React.memo</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Los hooks de optimización previenen cálculos costosos y re-renders innecesarios. useMemo 
+                        memoiza valores computados, useCallback memoiza funciones para evitar recreación en cada 
+                        render, y React.memo optimiza componentes comparando props. Aprendí cuándo y cómo usar 
+                        estas optimizaciones efectivamente, evitando over-optimization, y técnicas de profiling 
+                        con React DevTools para identificar bottlenecks de rendimiento en aplicaciones complejas.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Hooks Avanzados - useReducer, useRef, useImperativeHandle</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        useReducer maneja estado complejo con lógica de actualización centralizada, ideal para 
+                        state machines y acciones múltiples. useRef accede a elementos DOM directamente y persiste 
+                        valores mutables entre renders sin causar re-renders. useImperativeHandle personaliza la 
+                        instancia expuesta por refs en componentes forwardRef. Implementé patrones como reducer 
+                        composition, ref forwarding, y imperative APIs para casos de uso específicos como focus 
+                        management y animaciones.
+                    </p>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Custom Hooks - Reutilización de Lógica Stateful</h4>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Los custom hooks encapsulan lógica stateful reutilizable entre componentes. Creé hooks 
+                        para casos comunes como useLocalStorage, useFetch, useDebounce, useIntersectionObserver, 
+                        y useKeyboard. Aprendí patrones de diseño para hooks composables, manejo de cleanup 
+                        automático, error boundaries en hooks, y testing strategies. Los custom hooks promueven 
+                        separation of concerns y facilitan testing unitario de lógica compleja.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Reflexión -->
+        <div class="bg-white rounded-lg shadow-sm p-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Qué aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Hooks como paradigma fundamental para lógica reutilizable en React</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Optimización de rendimiento con memoización y técnicas avanzadas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Gestión de estado complejo con useReducer y patrones de state machines</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Custom hooks para encapsular lógica de negocio y efectos secundarios</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Integración de APIs del navegador y librerías externas mediante hooks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Testing strategies y debugging de hooks complejos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-6">¿Cómo aprendí?</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Construcción progresiva desde hooks básicos hasta implementaciones complejas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Análisis de performance con React DevTools y técnicas de profiling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Estudio de código fuente de librerías populares de hooks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Experimentación con diferentes patrones de composición de hooks</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Refactoring de componentes de clase a hooks para entender diferencias</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Colaboración en proyectos open source para aplicar conocimientos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Ruth Karina Fernández Bendezú - Semana 7</p>
+        </div>
+    </footer>
+</body>
+</html>

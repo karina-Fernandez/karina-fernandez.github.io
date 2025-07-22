@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 14- Desarrollo Backend con Python y Flask</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'warm-brown': '#B8860B',
+                        'light-gray': '#F5F5F5',
+                        'medium-gray': '#E5E5E5',
+                        'dark-gray': '#4A4A4A'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-light-gray font-sans text-dark-gray">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <h1 class="font-serif text-3xl font-medium text-warm-brown">SEMANA 14</h1>
+            <a href="index.html" 
+                class="bg-dark-gray hover:bg-gray-600 text-white px-6 py-2 rounded transition-colors">
+                 Cerrar
+            </a>
+  
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto px-6 py-12">
+        <!-- Título del tema -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <div class="text-center mb-8">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="h-px bg-gray-300 w-16"></div>
+                    <h2 class="font-serif text-4xl font-medium text-dark-gray mx-6">Desarrollo Backend con Python y Flask</h2>
+                    <div class="h-px bg-gray-300 w-16"></div>
+                </div>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                El desarrollo backend con Python 
+                y Flask ofrece una forma ágil y eficiente de 
+                construir aplicaciones web modernas. A través de conceptos teóricos
+                como programación orientada a objetos, el patrón MVC, el uso de servidores
+                como Apache y el motor de plantillas Jinja2, este enfoque permite diseñar 
+                soluciones flexibles, escalables y fáciles de mantener.
+            </div>
+        </div>
+
+        <!-- Temas Aprendidos -->
+        <div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+            <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Fundamentos Teóricos: Lenguaje Python</h3>
+            
+            <div class="space-y-8">
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Python como lenguaje backend:Python es un lenguaje
+                                 interpretado, multiplataforma y orientado 
+                                 a objetos. Su sintaxis clara y sencilla lo hace
+                                  ideal para el desarrollo de aplicaciones web, además 
+                                  de tener una gran comunidad y soporte de librerías.
+                                   En el backend, permite manejar la lógica del negocio,
+                                    acceder a bases de datos y construir servidores
+                                     personalizados.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Flask como microframework:Flask es un microframework de Python que permite desarrollar 
+                                aplicaciones web de forma rápida y flexible, no impone una estructura rígida, lo que
+                                 lo hace ideal para proyectos educativos, prototipos o desarrollos ligeros </span>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Patrón MVC</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Modelo: lógica de datos y acceso a la base de datos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Vista: presentación visual al usuario (HTML).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-warm-brown mr-3 mt-1">•</span>
+                            <span>Controlador: procesamiento de la lógica y gestión del 
+                                flujo entre vista y modelo.</span>
+                        </li>
+                </div>
+
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Motor de plantillas Jinja2</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span>Jinja2 es el motor de plantillas que Flask utiliza para integrar Python 
+                                con HTML. Permite insertar variables ({{ variable }})
+                                 y estructuras de control ({% for %}, {% if %})
+                                  directamente en archivos .html, generando
+                                   así páginas dinámicas que responden a las acciones del usuario.</span>
+                        </li>
+                </div>
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Conexión con bases de datos</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span></span>Una parte esencial del backend es la gestión de datos. Flask permite
+                             conectarse a gestores como MySQL mediante librerías externas (por ejemplo, PyMySQL), 
+                             lo que permite enviar y recuperar información mediante consultas SQL. El modelo de datos 
+                             puede definirse desde el código Python o a través de migraciones en entornos más complejos.</span>
+                        </li>
+
+                </div>
+                <div class="border-l-4 border-warm-brown pl-8">
+                    <h4 class="text-2xl font-semibold text-warm-brown mb-4">Integración con Apache y mod_wsgi</h4>
+                        <div class="space-y-8"></div>
+                        <li class="flex items-start">
+                            <span></span>Para desplegar aplicaciones en producción, se utiliza el servidor Apache junto con 
+                            el módulo mod_wsgi, que permite que el servidor ejecute aplicaciones Python y las sirva a los usuarios
+                             a través de la web. Esto requiere configurar archivos como httpd.conf, definir rutas y establecer el archivo
+                              principal que servirá la app Flask.</span>
+                        </li>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Proyectos -->
+<div class="bg-white rounded-lg shadow-sm p-12 mb-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Proyectos</h3>
+    <p class="text-center text-lg text-gray-700 mb-6">
+        Explora un ejemplo práctico de lo aprendido en Login con TOKEN:
+    </p>
+<div class="flex justify-center mb-4">
+    <a href="https://drive.google.com/file/d/1AqvD4euOMnx-MnkmupcGzwuBoQBUp1xV/view?usp=drive_link" target="_blank"
+       class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+        Ver ejemplo practico 
+    </a>  
+</div>
+
+<div class="flex justify-center">
+    <a href="https://github.com/karina-Fernandez/Proyectos/tree/main/estudiantes-app" target="_blank"
+       class="bg-warm-brown hover:bg-yellow-700 text-white font-medium px-6 py-3 rounded transition-colors">
+        Ver Ejercicio en Hosting
+    </a>  
+</div>
+
+    
+</div>
+<!-- Reflexión -->
+<div class="bg-white rounded-lg shadow-sm p-12">
+    <h3 class="font-serif text-3xl font-medium text-dark-gray mb-8 text-center">Reflexión</h3>
+    
+    <div class="grid md:grid-cols-2 gap-12">
+        <div class="border-l-4 border-warm-brown pl-8">
+            <h4 class="text-2xl font-semibold text-warm-brown mb-4 text-center">¿Qué Aprendí?</h4>
+            <p class="text-gray-700 leading-relaxed text-lg text-justify">
+                Aprendí los fundamentos del desarrollo backend utilizando Python y Flask. Comprendí 
+                cómo estructurar una aplicación siguiendo el patrón MVC, cómo gestionar rutas y plantillas
+                 dinámicas con Jinja2, y cómo establecer la conexión con una base de datos MySQL para almacenar 
+                 y recuperar información. También entendí los principios del despliegue web usando servidores como
+                  Apache y el módulo mod_wsgi.
+            </p>
+        </div>
+
+        <div class="border-l-4 border-warm-brown pl-8">
+            <h4 class="text-2xl font-semibold text-warm-brown mb-4 text-center">¿Cómo Aprendí?</h4>
+            <p class="text-gray-700 leading-relaxed text-lg text-justify">
+            Lo aprendí a través de un enfoque práctico que complementó la teoría. Apliqué los conceptos desarrollando 
+            una aplicación real: escribí código en Python para manejar rutas, diseñé formularios HTML, conecté con una 
+            base de datos y configuré el servidor Apache. A medida que construía la aplicación, resolvía errores, probaba
+             peticiones desde el navegador y comprendía cómo fluía la información desde el usuario hasta el servidor y viceversa.
+              Esta experiencia directa reforzó mi comprensión y me permitió ver cómo los elementos del backend se integran en una 
+              solución funcional.
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="bg-dark-gray text-white py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Ruth Karina Fernández Bendezú - Semana 9</p>
+        </div>
+    </footer>
+</body>
+</html>
